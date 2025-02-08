@@ -60,7 +60,7 @@ def main():
     # 确保配置包含所有必需参数
     config = {
         'model': 'deepseek-r1:14b',          # 模型名称
-        'ollama_host': 'http://192.168.9.97:11434',  # Ollama服务地址
+        'ollama_host': 'http://127.0.0.1:11434',  # Ollama服务地址
         'chromadb_settings': {       # ChromaDB配置
             'persist_directory': './chroma_db',
             'anonymized_telemetry': False
