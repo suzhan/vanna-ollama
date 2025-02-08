@@ -1,0 +1,23 @@
+ddls:
+  - id: "table_1"
+    ddl: |
+      CREATE TABLE IF NOT EXISTS my_table1 (
+          id INT PRIMARY KEY,
+          name VARCHAR(100)
+      );
+  - id: "table_2"
+    ddl: |
+      CREATE TABLE IF NOT EXISTS my_table2 (
+          id INT PRIMARY KEY,
+          description TEXT
+      );
+documentation:
+  - id: "doc_1"
+    content: "业务逻辑1：描述订单处理流程。"
+  - id: "doc_2"
+    content: "业务逻辑2：描述库存管理规则。"
+sqls:
+  - id: "sql_1"
+    query: "SELECT * FROM my_table1 WHERE name = 'Alice';"
+  - id: "sql_2"
+    query: "SELECT * FROM my_table2;"
